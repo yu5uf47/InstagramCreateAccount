@@ -53,12 +53,6 @@ Select select;
         String copy=driver.findElement(By.id("email")).getText();
 
 
-
-
-
-
-
-
         driver.switchTo().window(instagramhan);
         driver.findElement(By.xpath("//span[contains(@class,'aad7')]")).click();
         //driver.findElement(By.xpath("(//*[@dir='auto'])[2]")).click();
@@ -69,8 +63,6 @@ Select select;
                 faker.name().fullName(),Keys.TAB,
                 faker.name().username()+"47",Keys.TAB,
                 faker.internet().password());
-
-
 
         driver.findElement(By.xpath("//*[@type='submit']")).click();
 
@@ -96,12 +88,8 @@ Select select;
 
         WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(25));
         wait.until(ExpectedConditions.visibilityOf(mail));
-
-
         mail.click();
-
-
-         driver.switchTo().frame(1);
+        driver.switchTo().frame(1);
 
       WebElement onaykodu=driver.findElement(By.xpath("" +
               "//*[@id=\"email_content\"]/table/tbody/tr[4]/td/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td[2]"));
@@ -127,22 +115,9 @@ Select select;
         wait.until(ExpectedConditions.visibilityOf(aramakutsu));
        aramakutsu.click();
 
-
        WebElement arama=driver.findElement(By.xpath("input[@type='text']"));
        arama.sendKeys("alas.yusuf47",Keys.ENTER);
        driver.findElement(By.xpath("//*[@id=\"mount_0_0_0I\"]/div/div/div[2]/div/div/div/div[1]/div[1]/div[1]/div/div/div[2]/div/div/div[2]/div/div/div[2]/div/a[1]/div[1]/div/div/div[2]/div/div")).click();
-
-
-
-
-
-
-
-
-//input[@type='text']
-
-
-
 
 waitofseconds(20);
 
